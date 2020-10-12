@@ -58,6 +58,16 @@ public class Author {
     }
 
     @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", books=" + books +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -71,4 +81,6 @@ public class Author {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
+
+
 }
